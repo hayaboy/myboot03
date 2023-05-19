@@ -6,11 +6,11 @@ import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
-@Configuration  //클래스에 지정함, 스프링 설정 클래스로 지정
+@Configuration
 public class TilesConfig {
 
 	
-			@Bean  //자바 클래스의 메서드에 적용해 Bean을 반환하도록 지정
+			@Bean
 			public TilesConfigurer tilesConfigurer(){
 				
 				final TilesConfigurer configurer=new TilesConfigurer();
