@@ -37,12 +37,12 @@ public class MemberControllerImpl implements MemberController{
 	private MemberVO memberVO;
 
 
-	@RequestMapping(value = { "/"}, method = RequestMethod.GET)
+	@RequestMapping(value = { "/hi.do"}, method = RequestMethod.GET)
 	private String index(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		return "main";
 	}
 
-	@RequestMapping(value = { "/","/main.do"}, method = RequestMethod.GET)
+	@RequestMapping(value = { "/main.do"}, method = RequestMethod.GET)
 	private ModelAndView main(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		String viewName = (String)request.getAttribute("viewName");
 		ModelAndView mav = new ModelAndView();
