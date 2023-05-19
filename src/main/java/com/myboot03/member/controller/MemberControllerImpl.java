@@ -27,7 +27,7 @@ public class MemberControllerImpl implements MemberController{
 	/*
 	 * Marks a constructor, field, setter method, or config method as to be
 	 * autowired by Spring's dependency injection facilities.
-	 * »ı¼ºÀÚ, ÇÊµå, ¼ÂÅÍ ¸Ş¼­µå , ¸Ş¼­µå ¼³Á¤¿¡ ÀÇÁ¸¼º ÁÖÀÔÇÕ
+	 * ìƒì„±ì, í•„ë“œ, ì…‹í„° ë©”ì„œë“œ , ë©”ì„œë“œ ì„¤ì •ì— ì˜ì¡´ì„± ì£¼ì…í•©
 	 */
 	
 	@Autowired
@@ -129,7 +129,7 @@ public class MemberControllerImpl implements MemberController{
 			    session.setAttribute("member", memberVO);
 			    session.setAttribute("isLogOn", true);			   
 			    String action = (String)session.getAttribute("action");
-			    System.out.println("·Î±×ÀÎ¼º°ø½ÃÀÇ ¾×¼Ç°ª : " + action);
+			    System.out.println("ë¡œê·¸ì¸ì„±ê³µì‹œì˜ ì•¡ì…˜ê°’ : " + action);
 			    session.removeAttribute("action");
 			    
 			    if(action!= null) {
