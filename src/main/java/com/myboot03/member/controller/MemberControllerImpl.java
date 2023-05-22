@@ -34,7 +34,7 @@ public class MemberControllerImpl implements MemberController{
 	private MemberService memberService;	
 	
 	@Autowired
-	private MemberVO memberVO;
+	private MemberVO memberVO; //kk
 
 
 	@RequestMapping(value = { "/hi.do"}, method = RequestMethod.GET)
